@@ -3,7 +3,9 @@ from watchdog.events import FileSystemEventHandler
 
 import os
 import time
+
 downloadsFolder = r'C:\Users\Windows\Downloads'
+
 
 class DownloadsFolderListener(FileSystemEventHandler):
     def on_modified(self, event):
